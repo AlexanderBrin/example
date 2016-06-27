@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RevealImageDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENh-ST-UYe">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inlogo" translatesAutoresizingMaskIntoConstraints="NO" id="RwG-Kb-9rp">
+                                        <rect key="frame" x="15" y="15" width="220" height="220"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1tE-0n-Em0"/>
+                                    <constraint firstItem="RwG-Kb-9rp" firstAttribute="leading" secondItem="ENh-ST-UYe" secondAttribute="leading" constant="15" id="7w3-ot-Ovc"/>
+                                    <constraint firstAttribute="bottom" secondItem="RwG-Kb-9rp" secondAttribute="bottom" constant="15" id="Abp-LU-04a"/>
+                                    <constraint firstItem="RwG-Kb-9rp" firstAttribute="top" secondItem="ENh-ST-UYe" secondAttribute="top" constant="15" id="dMz-6s-SYj"/>
+                                    <constraint firstAttribute="width" secondItem="ENh-ST-UYe" secondAttribute="height" multiplier="1:1" id="gFP-SE-32B"/>
+                                    <constraint firstAttribute="trailing" secondItem="RwG-Kb-9rp" secondAttribute="trailing" constant="15" id="qvQ-p5-NI5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ENh-ST-UYe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gdi-hF-2wl"/>
+                            <constraint firstItem="ENh-ST-UYe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfc-m0-mY1"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="POD-US-wBV" appends="YES" id="duY-eL-dnV"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageToReveal" destination="RwG-Kb-9rp" id="RWT-1j-dnk"/>
+                        <outlet property="viewToDrawOn" destination="ENh-ST-UYe" id="4uY-jI-qC3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="POD-US-wBV">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="jE8-Ep-rUr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="506" y="467"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="inlogo" width="540" height="540"/>
+    </resources>
+</document>

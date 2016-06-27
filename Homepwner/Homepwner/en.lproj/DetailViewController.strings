@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Serial"; ObjectID = "8Rm-ez-Z4M"; */
+"8Rm-ez-Z4M.text" = "Serial";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "JMR-DC-QBi"; */
+"JMR-DC-QBi.text" = "Date";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Jn0-Nm-2KO"; */
+"Jn0-Nm-2KO.text" = "Name 2";
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "oQm-ft-r4p"; */
+"oQm-ft-r4p.text" = "Value";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "pVy-YA-rm9"; */
+"pVy-YA-rm9.normalTitle" = "Button";
